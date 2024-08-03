@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:15px;
+
+}
+
+div.right ul li{
+    list-style: none;
+    font-size: 16px;
+
+
+}
+div.right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+ul{
+    display: flex;
+    gap: 20px;
+}
+.nav-btn button{
+    border-radius: 50px;   
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.tagline{
+
+    /* background-image:url(download.png) ; */
+    background-image: linear-gradient(to right, #fbefb4 , #ffa90e);
+    text-align: center;
+    margin-top: 35px;
+    /* background-color: aqua; */
+    padding: 30px 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+div.tagline span{
+    text-decoration: underline;
+    font-size: 24px;
+}
+div.tagline strong{
+    
+font-size: 24px;
+}
+
+.container{
+    display: flex;
+    justify-content: end;
+}
+
+
+.container .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    flex-basis: 100rem;
+}
+
+
+.box-btn button{
+    
+    font-size: 24px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+    padding: 8px 20px;
+    margin-top: 35px;
+
+
+}
+
+.box1 h1{
+    font-size: 98px;
+}
+
+.box2 img{
+    width: 460px;
+}
+.footer{
+  
+    border-top: 1px solid black;
+
+}
+div.footer ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    color: #6b6b6b;
+
+}
+
+ul li{
+    list-style: none;
+}
+
+
+@media only screen and (max-width: 727px) {
+    div.right ul li:nth-child(1) , div.right ul li:nth-child(2) , div.right ul li:nth-child(3) {
+        display: none;    
+    }
+  }
+
+@media only screen and (max-width: 551px) {
+    div.right ul li:nth-child(4) {
+        display: none;    
+    }
+  }
+
+  @media only screen and (max-width: 903px) {
+   div.container .box2{
+        display: none;    
+    }
+
+    div.box1 .box-btn button{
+        background-color: green;
+    }
+    div.container{
+        width: 400px;
+        height: 570px;
+    }
+    div.footer{
+        background-color: black;
+    }
+
+    div.footer ul li:nth-child(6){
+       visibility: hidden;
+    }
+  }
+
+  
+  @media only screen and (max-width: 345px) {
+    div.inner .box1 h1{
+         font-size: 70px;
+
+     }
+     div.inner .box1{
+        width: 320px;
+     }
+
+     div.inner .box1 b{
+        font-size: 20px;
+     }
+     div.box1 .box-btn button{
+           background-color: green;
+           font-size: 18px;
+    }
+
+    div.tagline strong span{
+        font-size: 16px;
+ }
+
+ 
+    }
